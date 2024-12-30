@@ -73,7 +73,7 @@ def brickCollision(brick,ball):
             brick.deleteBrick(x)
             screen.tracer(1)
             num += score(x)
-            return distance<20
+            return distance<30
         x += 1
 
 
@@ -118,7 +118,7 @@ while game:
         ball.shift()
         ball.ybounce()
         updateScore()
-        #specificBrick.hideturtle()
+        
 
     elif ball.ycor() < -320:
         scoree.clear()
