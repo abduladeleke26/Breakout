@@ -110,7 +110,6 @@ while game:
 
     ball.move()
 
-    bricks.score(0)
 
     if ball.ycor() > 287 or barCollision(bar,ball):
         ball.ybounce()
