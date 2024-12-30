@@ -70,19 +70,6 @@ class Bricks(Turtle):
     def deleteBrick(self,x):
         self.bricks[x].goto(1000,1000)
 
-    def score(self,x):
-        num = 0
-        brick = self.bricks[x]
-        if brick.pencolor() == "yellow":
-            print("yellow")
-            num += 1
-            return num
-        #elif self.bricks[x].pencolor() == "green":
-            #return 2
-        #elif self.bricks[x].pencolor() == "orange":
-            #return 5
-        #elif self.bricks[x].pencolor() == "red":
-           #return 10
 
     def color(self,x):
         brick = self.bricks[x]
